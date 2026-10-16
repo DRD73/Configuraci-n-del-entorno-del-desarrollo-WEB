@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Web | Herramientas de desarrollo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Proyecto Web</h1>
+    <p class="subtitulo">Herramientas esenciales para desarrollar aplicaciones web</p>
+    <nav>
+      <a href="#intro">Introducción</a>
+      <a href="#editor">Editor</a>
+      <a href="#navegador">Navegador</a>
+      <a href="#servidor">Servidor local</a>
+      <a href="#devtools">DevTools</a>
+      <a href="#porque">¿Por qué?</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>¿Qué es el desarrollo web?</h2>
+      <p>
+        El desarrollo web es el proceso de crear sitios y aplicaciones que se
+        ejecutan en un navegador y que los usuarios pueden visitar desde cualquier
+        dispositivo con acceso a internet. Va desde una página sencilla con texto e
+        imágenes hasta aplicaciones complejas como tiendas en línea, plataformas
+        educativas o redes sociales.
+      </p>
+      <p>
+        Todo sitio web se construye sobre tres tecnologías base: <strong>HTML</strong>,
+        que define la estructura y el contenido de la página; <strong>CSS</strong>, que
+        controla el diseño, los colores y la distribución de los elementos; y
+        <strong>JavaScript</strong>, que agrega interactividad y permite que la página
+        responda a las acciones del usuario.
+      </p>
+      <img src="img/tecnologia.png" alt="Ilustración con las etiquetas HTML, CSS y JS">
+      <p>
+        Para trabajar de forma ordenada y detectar errores a tiempo, un desarrollador
+        necesita cuatro herramientas básicas: un editor de código, un navegador, un
+        servidor local y las herramientas de desarrollador. A continuación se explica
+        qué hace cada una y cómo se relacionan entre sí.
+      </p>
+    </section>
+
+    <section id="editor">
+      <h2>1. Editor de código</h2>
+      <p>
+        Es el programa donde se escribe y organiza el código del proyecto. Aunque un
+        archivo HTML puede escribirse en un bloc de notas, un editor especializado como
+        <strong>Visual Studio Code</strong> hace el trabajo mucho más fácil, rápido y
+        ordenado, sobre todo cuando el proyecto tiene varios archivos y carpetas.
+      </p>
+      <ul>
+        <li><strong>Resaltado de sintaxis:</strong> colorea las etiquetas, atributos y palabras clave para que el código sea más fácil de leer y de revisar.</li>
+        <li><strong>Autocompletado:</strong> sugiere etiquetas y propiedades mientras se escribe, lo que ahorra tiempo y reduce los errores de escritura.</li>
+        <li><strong>Explorador de archivos:</strong> muestra toda la carpeta del proyecto en un panel lateral, para pasar de un archivo a otro rápidamente.</li>
+        <li><strong>Extensiones y terminal integrado:</strong> permiten ampliar el editor con herramientas adicionales, como Live Server, sin salir del programa.</li>
+      </ul>
+    </section>
+
+    <section id="navegador">
+      <h2>2. Navegador web</h2>
+      <p>
+        El navegador (Chrome, Firefox o Edge) es el programa que interpreta el código
+        HTML, CSS y JavaScript y lo convierte en la página que ve el usuario. Es el lugar
+        donde se comprueba el resultado real del trabajo, ya que lo que se escribe en el
+        editor solo cobra vida cuando se abre en el navegador.
+      </p>
+      <p>
+        Es importante mantenerlo actualizado, porque las versiones recientes soportan los
+        estándares más nuevos de HTML5 y CSS y corrigen fallos de seguridad. También es
+        recomendable probar el proyecto en más de un navegador, ya que cada uno puede
+        mostrar pequeñas diferencias en el diseño o el comportamiento de la página.
+      </p>
+    </section>
+
+    <section id="servidor">
+      <h2>3. Servidor local</h2>
+      <p>
+        Un servidor local sirve los archivos del proyecto desde la propia computadora,
+        mediante una dirección como <code>http://127.0.0.1:5500</code>. En Visual Studio
+        Code se utiliza normalmente la extensión <strong>Live Server</strong>, que se activa
+        con un clic derecho sobre el archivo <code>index.html</code>.
+      </p>
+      <ul>
+        <li>Simula el funcionamiento de un sitio real sin necesidad de publicarlo en internet.</li>
+        <li>Recarga la página automáticamente cada vez que se guarda un cambio, lo que agiliza las pruebas.</li>
+        <li>Evita problemas que pueden aparecer al abrir los archivos directamente desde el disco, como rutas o recursos que no cargan.</li>
+      </ul>
+    </section>
+
+    <section id="devtools">
+      <h2>4. Herramientas de desarrollador</h2>
+      <p>
+        Están integradas en el navegador y se abren con la tecla <strong>F12</strong> o con
+        clic derecho &gt; Inspeccionar. Permiten revisar, probar y corregir la página mientras
+        se visualiza, sin modificar los archivos originales. Sus pestañas principales son:
+      </p>
+      <ul>
+        <li><strong>Elements:</strong> muestra el HTML y el CSS de la página y permite modificarlos en vivo para probar cambios.</li>
+        <li><strong>Console:</strong> muestra los errores y mensajes de JavaScript, y es el primer lugar donde se busca cuando algo no funciona.</li>
+        <li><strong>Network:</strong> indica si los archivos (css, js e imágenes) se cargaron correctamente o si hubo algún error, como una ruta mal escrita.</li>
+        <li><strong>Vista adaptable:</strong> simula pantallas de celular y tableta para comprobar que la página se vea bien en distintos tamaños.</li>
+      </ul>
+
+      <h3>Ejemplo: estructura básica de HTML5</h3>
+      <p>
+        Todas las páginas de este proyecto parten de una estructura como la siguiente.
+        Pulsa el botón para ver el ejemplo.
+      </p>
+      <button id="btnEjemplo" aria-expanded="false" aria-controls="ejemplo">Ver ejemplo de código</button>
+      <div id="ejemplo" hidden>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Título de la página&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Encabezado principal&lt;/h1&gt;
+  &lt;p&gt;Un párrafo de texto.&lt;/p&gt;
+  &lt;script src="js/main.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p class="nota">
+          <strong>head</strong> contiene la información de la página (título, codificación y
+          enlace a los estilos). <strong>body</strong> contiene lo que el usuario ve y el
+          enlace al archivo de JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <section id="porque">
+      <h2>¿Por qué son necesarias estas herramientas?</h2>
+      <p>
+        Cada herramienta cumple una función distinta y ninguna reemplaza a las demás. El
+        siguiente cuadro resume su aporte al trabajo del desarrollador:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Herramienta</th><th>Función principal</th><th>Beneficio</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Editor de código</td><td>Escribir y organizar el código</td><td>Mayor rapidez y menos errores</td></tr>
+          <tr><td>Navegador</td><td>Mostrar y ejecutar la página</td><td>Ver el resultado real</td></tr>
+          <tr><td>Servidor local</td><td>Servir el proyecto en el equipo</td><td>Pruebas rápidas y realistas</td></tr>
+          <tr><td>DevTools</td><td>Inspeccionar y depurar</td><td>Corregir errores a tiempo</td></tr>
+        </tbody>
+      </table>
+      <p>
+        En conjunto forman el ciclo de trabajo del desarrollador: se escribe el código en el
+        editor, se visualiza en el navegador mediante el servidor local, se revisan los
+        errores con las herramientas de desarrollador y se corrigen en el editor. Este ciclo
+        se repite muchas veces durante un proyecto, y contar con un entorno bien configurado
+        lo hace más ágil y confiable. Para profundizar, consulta la documentación oficial en
+        <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Proyecto académico de desarrollo web</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
